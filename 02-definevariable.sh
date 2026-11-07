@@ -2,8 +2,8 @@
 
 # conversation with the user
 
-$NAME1=Ravi
-$NAME2=Rajan
+NAME1=Ravi
+NAME2=Rajan
 
 echo "$NAME1: Hey! what's your name?"
 echo "$NAME2: Hi! My name is $NAME2. What's yours?"
