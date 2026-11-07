@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # conversation with the user
+## DRY - Don't Repeat Yourself
 
 NAME1=Rajan
 NAME2=Ravi
