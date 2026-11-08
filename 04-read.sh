@@ -17,3 +17,14 @@ echo "Your password is: $password"
 echo "Enter your age: "
 read -n 2 age
 echo "Your age is: $age"    
+
+echo "Enter your favorite color (you have 5 seconds to answer): "
+if read -t 5 color; then
+    echo "Your favorite color is: $color"           
+else
+    echo "You did not answer in time!"  
+
+echo "Your favorite color is: $color"           
+else
+    echo "You did not answer in time!"  
+fi      
