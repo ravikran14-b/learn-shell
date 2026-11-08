@@ -16,4 +16,3 @@ TOTAL_TIME=$(($END_TIME-$START_TIME))
 
 ## Total time taken to run this command
 echo "Total time taken: $TOTAL_TIME Seconds"
-
