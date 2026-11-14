@@ -12,6 +12,7 @@ echo "Script name: $0"
 echo "Real path of the script: $(realpath $0)"
 sleep 10 &
 echo "PID of the current running script: $$"
+echo "PID of the last background command: $!"
 wait $! 
 echo "Which user is running this script: $USER"
 echo "present working directory: $PWD"
