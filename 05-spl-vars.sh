@@ -13,8 +13,9 @@ echo "Real path of the script: $(realpath $0)"
 sleep 10 &
 echo "PID of the current running script: $$"
 echo "PID of the last background command: $!"
-wait $! 
+wait $! #script will wait for the background process to finish before continuing
 echo "Which user is running this script: $USER"
 echo "present working directory: $PWD"
 echo "home directory of the user running this script: $HOME"
 echo "exit status of the last command executed: $?"
+echo "total time taken by the script to execute: $SECONDS seconds"
