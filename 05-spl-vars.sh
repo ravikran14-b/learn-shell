@@ -10,7 +10,7 @@ echo "Second arg passed to the script: $2"
 echo "Third arg passed to the script: $3"
 echo "Script name: $0"
 echo "Real path of the script: $(realpath $0)"
-sleep 10 &
+sleep 5 &
 echo "PID of the current running script: $$"
 echo "PID of the last background command: $!"
 wait $! #script will wait for the background process to finish before continuing
