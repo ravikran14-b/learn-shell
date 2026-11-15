@@ -8,7 +8,7 @@ echo "$((var1 + var2))"         # Output will be 30
 
 
 declare -i COUNT=5
-NUMBER=$(($COUNT+1))
+NUMBER=$((COUNT+1))
 
 echo "$COUNT"                    # Output will be 5
 echo "$NUMBER"                   # Output will be 5+1
