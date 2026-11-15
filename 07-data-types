@@ -3,4 +3,14 @@
 var1=10
 var2=20
 
-echo "$((var1 + var2))"
+echo "$var1+$var2"              # Output will be 10+20
+echo "$((var1 + var2))"         # Output will be 30
+
+
+var3=15
+var4=5
+var5=ravi
+
+declare -i ravi=5
+
+COUNT=ravi_$var3
