@@ -17,6 +17,6 @@ FRUITS=("Apple" "Banana" "Cherry") # This is list of values \ strings is call AR
 echo "All Fruits: ${FRUITS[@]}"          # Output will be All Fruits: Apple Banana Cherry
 echo "First Fruit: ${FRUITS[0]}"         # Output will be First Fruit: Apple        
 echo "Second Fruit: ${FRUITS[1]}"        # Output will be Second Fruit: Banana
-    
-    
+
+
 
