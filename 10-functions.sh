@@ -26,5 +26,3 @@ validate $? "Nginx Installation"
 dnf install mysql -y
 validate $? "mysql installation"
 
-if [ $? = 0 ]; then
-echo "SUCCESS"
