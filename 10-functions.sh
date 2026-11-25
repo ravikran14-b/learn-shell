@@ -5,13 +5,13 @@
 
 user_id=$(id -u)
  
-if [$user_id -ne 0]; then
+if [ $user_id -ne 0 ]; then
      echo "Please run the script with sudo accesss"
      exit 1
 fi
 
 validate(){
-    if [$1 -ne 0]; then
+    if [ $1 -ne 0 ]; then
        echo "$2....FAILED"
        exit 1
 else 
@@ -26,5 +26,5 @@ validate $? "Nginx Installation"
 dnf install mysql -y
 validate $? "mysql installation"
 
-if [$? = 0]; then
+if [ $? = 0 ]; then
 echo "SUCCESS"
