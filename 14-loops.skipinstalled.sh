@@ -34,3 +34,5 @@ do
         echo "${package} already installed... SKIPPING"
 fi
 done
+
+echo "script ended executing at $(date +"%F %T")"
