@@ -12,7 +12,7 @@ fi
 
 mkdir -p $logs_folder
 
-echo "script started executing at $(date +"%F %T")"
+
 
 validate(){
     if [ $1 -ne 0 ]; then
@@ -28,6 +28,7 @@ do
   dnf list installed $package
   if [ $? -ne 0 ]; then
       echo "going to install: ${package}"
+
   dnf install $package -y &>> $logs_file
   validate $? "installing ${package}"
   else 
