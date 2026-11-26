@@ -1,12 +1,19 @@
+#!/bin/bash
+
 user_id=$(id -u)
 
 if [ $user_id -ne 0 ]; then
-echo "you are not root"
+echo " Please run the script with root access... exiting"
 exit 1
-
-else
-echo "you are admin"
 fi
 
+echo "proceeding"
 
-echo "I'm exiting with $?"
+dnf install nginx -y
+
+if [ $? -ne 0 ]; then
+echo "Nginx installation failed"
+exit 1
+else
+echo "Nginx installation Success"
+fi
