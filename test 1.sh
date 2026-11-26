@@ -9,11 +9,19 @@ fi
 
 echo "proceeding"
 
-dnf install nginx -y
+validate (){
 
-if [ $? -ne 0 ]; then
-echo "Nginx installation failed"
-exit 1
-else
-echo "Nginx installation Success"
+if [ $1 -ne 0 ]; then
+echo "$2... Failed"
+else 
+echo "$2... Success"
 fi
+}
+
+
+dnf install nginx -y
+validate $? "Nginix installation"
+
+dnf install mysql -y
+validate $? "mysql installation"
+
