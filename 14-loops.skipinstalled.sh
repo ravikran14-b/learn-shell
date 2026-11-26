@@ -33,3 +33,4 @@ do
   else 
         echo "${package} already installed... SKIPPING"
 fi
+done
